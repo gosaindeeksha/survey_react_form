@@ -68,14 +68,14 @@ function Success() {
           </>
         ) : null}
                     <Typography variant="h6" component="h2">
-            Feedback : {formData.}
+            Feedback : {formData.feedback}
             </Typography>
 
         <Typography variant="h6" component="h2">
           Additional Questions:
         </Typography>
 
-        <ApiQ topic={formData.feedback} />
+        <ApiQ topic={formData.surveyTopic} />
       </ThemeProvider>
     );
   } else {
